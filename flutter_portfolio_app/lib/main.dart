@@ -231,26 +231,45 @@ class PortfolioApp extends StatelessWidget {
                       ),
                     ),
 
-                    //Experience row
+                    // Experience row
                     Row(
                       children: [
                         Container(
-                          margin: const EdgeInsets.all(15.0),
+                          margin: const EdgeInsets.all(10.0),
                           padding: const EdgeInsets.all(10.0),
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.blueAccent)),
-                          height: 100,
-                          width: 140,
+                          height: 300,
+                          width: 350,
                           child: Column(
                             children: [
                               Row(
                                 children: [
-                                  //First box
+                                  //job image
+                                  Expanded(
+                                    child: Container(
+                                      height: 100,
+                                      child: Image(
+                                        image: NetworkImage(
+                                          'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  //Company's name
                                   Container(
-                                    child: Icon(
-                                      Icons.web_outlined,
-                                      color: Colors.blueAccent,
-                                      size: 40.0,
+                                    // margin: const EdgeInsets.all(5.0),
+                                    padding: const EdgeInsets.all(20.0),
+                                    child: Text(
+                                      'Greylux Ltd',
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -258,10 +277,29 @@ class PortfolioApp extends StatelessWidget {
                               Row(
                                 children: [
                                   Container(
+                                    width: 300,
+                                    // margin: const EdgeInsets.all(5.0),
+                                    padding: const EdgeInsets.all(5.0),
                                     child: Text(
-                                      "Web Development",
+                                      "I helped buid web apps and websites for client. In addition to my job description, I managed a couple of project and saw to their goals respectively",
                                       style: TextStyle(
                                         fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 300,
+                                    // margin: const EdgeInsets.all(5.0),
+                                    padding: const EdgeInsets.all(5.0),
+                                    child: Text(
+                                      "Software Developer, Business Analyst, Product Owner",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        color: Colors.black87,
                                       ),
                                     ),
                                   ),
@@ -270,92 +308,137 @@ class PortfolioApp extends StatelessWidget {
                             ],
                           ),
                         ),
-                      ],
-                    ),
-
-                    //Begining of About me
-                    Container(
-                      alignment: Alignment.topLeft,
-                      margin: const EdgeInsets.all(50.0),
-                      padding: const EdgeInsets.all(10.0),
-                      child: Text(
-                        'About me',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                    ),
-
-                    //Description
-                    Row(
-                      children: [
-                        Column(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.all(10.0),
-                              padding: const EdgeInsets.all(10.0),
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.blueAccent)),
-                              // height: 100,
-                              // width: 140,
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    child: Container(
+                        Expanded(
+                          child: Container(
+                            margin: const EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.blueAccent)),
+                            height: 200,
+                            width: 250,
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    //Second box
+                                    Container(
+                                      child: Icon(
+                                        Icons.web_outlined,
+                                        color: Colors.blueAccent,
+                                        size: 40.0,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
                                       child: Text(
-                                        "I\'m Deborah. I create value and solve problems as a Software Developer.",
+                                        "App Development",
                                         style: TextStyle(
-                                          fontSize: 28,
-                                          fontWeight: FontWeight.bold,
+                                          fontSize: 14,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
-                              ),
+                                  ],
+                                ),
+                              ],
                             ),
-                          ],
+                          ),
                         ),
                       ],
                     ),
 
+                    // Begining of About me
+                    // Container(
+                    //   alignment: Alignment.topLeft,
+                    //   margin: const EdgeInsets.all(50.0),
+                    //   padding: const EdgeInsets.all(10.0),
+                    //   child: Text(
+                    //     'About me',
+                    //     style: TextStyle(
+                    //       fontWeight: FontWeight.bold,
+                    //       fontSize: 18,
+                    //     ),
+                    //     textAlign: TextAlign.left,
+                    //   ),
+                    // ),
+
+                    // Description
+                    // Row(
+                    //   children: [
+                    //     Column(
+                    //       children: [
+                    //         Container(
+                    //           margin: const EdgeInsets.all(10.0),
+                    //           padding: const EdgeInsets.all(10.0),
+                    //           decoration: BoxDecoration(
+                    //               border: Border.all(color: Colors.blueAccent)),
+                    //           // height: 100,
+                    //           // width: 140,
+                    //           child: Column(
+                    //             children: [
+                    //               Expanded(
+                    //                 child: Container(
+                    //                   child: Text(
+                    //                     "I\'m Deborah. I create value and solve problems as a Software Developer.",
+                    //                     style: TextStyle(
+                    //                       fontSize: 28,
+                    //                       fontWeight: FontWeight.bold,
+                    //                     ),
+                    //                   ),
+                    //                 ),
+                    //               ),
+                    //             ],
+                    //           ),
+                    //         ),
+                    //       ],
+                    //     ),
+                    //   ],
+                    // ),
+
                     //About me picture
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            child: Image(
-                              image: NetworkImage(
-                                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
+                    // Row(
+                    //   children: [
+                    //     Expanded(
+                    //       child: Container(
+                    //         child: Image(
+                    //           image: NetworkImage(
+                    //               'https://photos.google.com/photo/AF1QipO1QTTTy_oyWr0VCALcE2dWc3NrKtBnlNvRw_hc'),
+                    //         ),
+                    //       ),
+                    //     )
+                    //   ],
+                    // ),
 
                     //Get in touch button
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Container(
-                          alignment: Alignment.topLeft,
-                          margin: const EdgeInsets.all(15.0),
-                          padding: const EdgeInsets.all(10.0),
-                          child: ElevatedButton(
+                        Center(
+                          child: Container(
+                            alignment: Alignment.topLeft,
+                            margin: const EdgeInsets.all(15.0),
+                            padding: const EdgeInsets.all(10.0),
+                            child: ElevatedButton(
                               child: Text(
                                 'Contact me',
                               ),
                               onPressed: () {},
                               style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStateProperty.all(Colors.blue),
-                                  padding: MaterialStateProperty.all(
-                                      EdgeInsets.all(13)),
-                                  textStyle: MaterialStateProperty.all(
-                                      TextStyle(
-                                          fontSize: 20, color: Colors.white)))),
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.blue),
+                                padding: MaterialStateProperty.all(
+                                    EdgeInsets.all(13)),
+                                textStyle: MaterialStateProperty.all(
+                                  TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -365,11 +448,11 @@ class PortfolioApp extends StatelessWidget {
                     //   children: [
                     //     Expanded(
                     //       child: Container(
-                    //           // child: Image(
-                    //           //   image: NetworkImage(
-                    //           //       'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                    //           // ),
-                    //           ),
+                    //         child: Image(
+                    //           image: NetworkImage(
+                    //               'https://www.flaticon.com/free-icon/twitter_733635?term=twitter&page=1&position=2&page=1&position=2&related_id=733635&origin=style'),
+                    //         ),
+                    //       ),
                     //     )
                     //   ],
                     // ),
