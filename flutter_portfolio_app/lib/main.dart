@@ -420,9 +420,9 @@ class PortfolioApp extends StatelessWidget {
                                       border:
                                           Border.all(color: Colors.blueAccent)),
                                   // height: 100,
-                                  // width: 140,
+                                  width: 140,
                                   child: Text(
-                                    "I am a Software Developer from Nigeria, I moved to Milan Italy in 2019 to pursue a masters degree in design - innovation, strategy and product. Since graduation, I have worked to create value for businesses and brands by drawing on my skills and experiences in product design and innovation, product marketing and brand strategy.",
+                                    "I am a Software Developer from Nigeria, with a degree B.Sc Computer Science class of 2019. Since graduation, I have worked to create value for businesses and brands by drawing on my skills and experiences in product management, software development and innovation, product marketing and brand strategy.",
                                     style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.black45,
