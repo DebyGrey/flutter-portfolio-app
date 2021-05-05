@@ -231,26 +231,45 @@ class PortfolioApp extends StatelessWidget {
                       ),
                     ),
 
-                    //Experience row
+                    // Experience row
                     Row(
                       children: [
                         Container(
-                          margin: const EdgeInsets.all(15.0),
+                          margin: const EdgeInsets.all(10.0),
                           padding: const EdgeInsets.all(10.0),
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.blueAccent)),
-                          height: 100,
-                          width: 140,
+                          height: 320,
+                          width: 350,
                           child: Column(
                             children: [
                               Row(
                                 children: [
-                                  //First box
+                                  //job image
+                                  Expanded(
+                                    child: Container(
+                                      height: 100,
+                                      child: Image(
+                                        image: NetworkImage(
+                                          'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  //Company's name
                                   Container(
-                                    child: Icon(
-                                      Icons.web_outlined,
-                                      color: Colors.blueAccent,
-                                      size: 40.0,
+                                    // margin: const EdgeInsets.all(5.0),
+                                    padding: const EdgeInsets.all(20.0),
+                                    child: Text(
+                                      'Greylux Ltd',
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -258,10 +277,31 @@ class PortfolioApp extends StatelessWidget {
                               Row(
                                 children: [
                                   Container(
+                                    width: 300,
+                                    // margin: const EdgeInsets.all(5.0),
+                                    padding: const EdgeInsets.all(5.0),
                                     child: Text(
-                                      "Web Development",
+                                      "I helped buid web apps and websites for client. In addition to my job description, I managed a couple of project and saw to their goals respectively",
                                       style: TextStyle(
                                         fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 300,
+                                    // margin: const EdgeInsets.all(5.0),
+                                    padding: const EdgeInsets.all(5.0),
+                                    child: Text(
+                                      "Software Developer |Business Analyst |Product Owner",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w100,
+                                        color: Colors.black45,
+                                        fontStyle: FontStyle.italic,
                                       ),
                                     ),
                                   ),
@@ -270,10 +310,88 @@ class PortfolioApp extends StatelessWidget {
                             ],
                           ),
                         ),
+                        Expanded(
+                          child: Container(
+                            margin: const EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black87)),
+                            height: 320,
+                            width: 350,
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    //job image
+                                    Expanded(
+                                      child: Container(
+                                        height: 100,
+                                        child: Image(
+                                          image: NetworkImage(
+                                            'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                                          ),
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    //Company's name
+                                    Container(
+                                      // margin: const EdgeInsets.all(5.0),
+                                      padding: const EdgeInsets.all(20.0),
+                                      child: Text(
+                                        'EasyAce Synergy',
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 300,
+                                      // margin: const EdgeInsets.all(5.0),
+                                      padding: const EdgeInsets.all(5.0),
+                                      child: Text(
+                                        "I buid websites for clients which gave their businesses the boost it needed by reaching a handful of social prospects",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 300,
+                                      // margin: const EdgeInsets.all(5.0),
+                                      padding: const EdgeInsets.all(5.0),
+                                      child: Text(
+                                        "Software Developer, Business Analyst, Product Owner",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w100,
+                                          color: Colors.black45,
+                                          fontStyle: FontStyle.italic,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
                       ],
                     ),
 
-                    //Begining of About me
+                    // Begining of About me
                     Container(
                       alignment: Alignment.topLeft,
                       margin: const EdgeInsets.all(50.0),
@@ -288,33 +406,32 @@ class PortfolioApp extends StatelessWidget {
                       ),
                     ),
 
-                    //Description
+                    // Description
                     Row(
                       children: [
                         Column(
                           children: [
-                            Container(
-                              margin: const EdgeInsets.all(10.0),
-                              padding: const EdgeInsets.all(10.0),
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.blueAccent)),
-                              // height: 100,
-                              // width: 140,
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      child: Text(
-                                        "I\'m Deborah. I create value and solve problems as a Software Developer.",
-                                        style: TextStyle(
-                                          fontSize: 28,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                            Row(
+                              children: [
+                                Center(
+                                  child: Container(
+                                    margin: const EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
+
+                                    // height: 100,
+                                    width: 350,
+                                    alignment: Alignment.center,
+                                    child: Text(
+                                      "I am a Software Developer from Nigeria, with a degree B.Sc Computer Science class of 2019. Since graduation, I have worked to create value for businesses and brands by drawing on my skills and experiences in product management, software development and innovation, product marketing and brand strategy.",
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        color: Colors.black45,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ],
                         ),
@@ -322,40 +439,47 @@ class PortfolioApp extends StatelessWidget {
                     ),
 
                     //About me picture
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            child: Image(
-                              image: NetworkImage(
-                                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
+                    // Row(
+                    //   children: [
+                    //     Expanded(
+                    //       child: Container(
+                    //         child: Image(
+                    //           image: NetworkImage(
+                    //               'https://photos.google.com/photo/AF1QipO1QTTTy_oyWr0VCALcE2dWc3NrKtBnlNvRw_hc'),
+                    //         ),
+                    //       ),
+                    //     )
+                    //   ],
+                    // ),
 
                     //Get in touch button
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Container(
-                          alignment: Alignment.topLeft,
-                          margin: const EdgeInsets.all(15.0),
-                          padding: const EdgeInsets.all(10.0),
-                          child: ElevatedButton(
+                        Center(
+                          child: Container(
+                            alignment: Alignment.topLeft,
+                            margin: const EdgeInsets.all(15.0),
+                            padding: const EdgeInsets.all(10.0),
+                            child: ElevatedButton(
                               child: Text(
                                 'Contact me',
                               ),
                               onPressed: () {},
                               style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStateProperty.all(Colors.blue),
-                                  padding: MaterialStateProperty.all(
-                                      EdgeInsets.all(13)),
-                                  textStyle: MaterialStateProperty.all(
-                                      TextStyle(
-                                          fontSize: 20, color: Colors.white)))),
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.blue),
+                                padding: MaterialStateProperty.all(
+                                    EdgeInsets.all(13)),
+                                textStyle: MaterialStateProperty.all(
+                                  TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -365,11 +489,11 @@ class PortfolioApp extends StatelessWidget {
                     //   children: [
                     //     Expanded(
                     //       child: Container(
-                    //           // child: Image(
-                    //           //   image: NetworkImage(
-                    //           //       'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                    //           // ),
-                    //           ),
+                    //         child: Image(
+                    //           image: NetworkImage(
+                    //               'https://www.flaticon.com/free-icon/twitter_733635?term=twitter&page=1&position=2&page=1&position=2&related_id=733635&origin=style'),
+                    //         ),
+                    //       ),
                     //     )
                     //   ],
                     // ),
