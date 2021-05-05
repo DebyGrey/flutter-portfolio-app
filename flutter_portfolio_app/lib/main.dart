@@ -164,7 +164,7 @@ class PortfolioApp extends StatelessWidget {
                                 children: [
                                   Container(
                                     child: Text(
-                                      "Web Development",
+                                      "App Development",
                                       style: TextStyle(
                                         fontSize: 14,
                                       ),
@@ -187,7 +187,7 @@ class PortfolioApp extends StatelessWidget {
                               children: [
                                 Row(
                                   children: [
-                                    //First box
+                                    //Third box
                                     Container(
                                       child: Icon(
                                         Icons.web_outlined,
@@ -232,205 +232,133 @@ class PortfolioApp extends StatelessWidget {
                     ),
 
                     //Experience row
-                    // Row(
-                    //   children: [
-                    //     Container(
-                    //       margin: const EdgeInsets.all(15.0),
-                    //       padding: const EdgeInsets.all(10.0),
-                    //       decoration: BoxDecoration(
-                    //           border: Border.all(color: Colors.blueAccent)),
-                    //       height: 100,
-                    //       width: 140,
-                    //       child: Column(
-                    //         children: [
-                    //           Row(
-                    //             children: [
-                    //               //First box
-                    //               Container(
-                    //                 child: Icon(
-                    //                   Icons.web_outlined,
-                    //                   color: Colors.blueAccent,
-                    //                   size: 40.0,
-                    //                 ),
-                    //               ),
-                    //             ],
-                    //           ),
-                    //           Row(
-                    //             children: [
-                    //               Container(
-                    //                 child: Text(
-                    //                   "Web Development",
-                    //                   style: TextStyle(
-                    //                     fontSize: 14,
-                    //                   ),
-                    //                 ),
-                    //               ),
-                    //             ],
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     ),
-                    //     //Second box
-                    //     Container(
-                    //       margin: const EdgeInsets.all(15.0),
-                    //       padding: const EdgeInsets.all(10.0),
-                    //       decoration: BoxDecoration(
-                    //           border: Border.all(color: Colors.blueAccent)),
-                    //       height: 100,
-                    //       width: 140,
-                    //       child: Column(
-                    //         children: [
-                    //           Row(
-                    //             children: [
-                    //               Container(
-                    //                 child: Icon(
-                    //                   Icons.web_outlined,
-                    //                   color: Colors.blueAccent,
-                    //                   size: 40.0,
-                    //                 ),
-                    //               ),
-                    //             ],
-                    //           ),
-                    //           Row(
-                    //             children: [
-                    //               Container(
-                    //                 child: Text(
-                    //                   "Web Development",
-                    //                   style: TextStyle(
-                    //                     fontSize: 14,
-                    //                   ),
-                    //                 ),
-                    //               ),
-                    //             ],
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     ),
-                    //     //Third box
-                    //     // Container(
-                    //     //   margin: const EdgeInsets.all(15.0),
-                    //     //   padding: const EdgeInsets.all(10.0),
-                    //     //   decoration: BoxDecoration(
-                    //     //       border: Border.all(color: Colors.blueAccent)),
-                    //     //   height: 100,
-                    //     //   width: 140,
-                    //     //   child: Column(
-                    //     //     children: [
-                    //     //       Row(
-                    //     //         children: [
-                    //     //           Container(
-                    //     //             child: Icon(
-                    //     //               Icons.web_outlined,
-                    //     //               color: Colors.blueAccent,
-                    //     //               size: 40.0,
-                    //     //             ),
-                    //     //           ),
-                    //     //         ],
-                    //     //       ),
-                    //     //       Row(
-                    //     //         children: [
-                    //     //           Container(
-                    //     //             child: Text(
-                    //     //               "Web Development",
-                    //     //               style: TextStyle(
-                    //     //                 fontSize: 14,
-                    //     //               ),
-                    //     //             ),
-                    //     //           ),
-                    //     //         ],
-                    //     //       ),
-                    //     //     ],
-                    //     //   ),
-                    //     // ),
-                    //   ],
-                    // ),
+                    Row(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueAccent)),
+                          height: 100,
+                          width: 140,
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  //First box
+                                  Container(
+                                    child: Icon(
+                                      Icons.web_outlined,
+                                      color: Colors.blueAccent,
+                                      size: 40.0,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    child: Text(
+                                      "Web Development",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
 
                     //Begining of About me
-                    // Container(
-                    //   alignment: Alignment.topLeft,
-                    //   margin: const EdgeInsets.all(50.0),
-                    //   padding: const EdgeInsets.all(10.0),
-                    //   child: Text(
-                    //     'About me',
-                    //     style: TextStyle(
-                    //       fontWeight: FontWeight.bold,
-                    //       fontSize: 18,
-                    //     ),
-                    //     textAlign: TextAlign.left,
-                    //   ),
-                    // ),
+                    Container(
+                      alignment: Alignment.topLeft,
+                      margin: const EdgeInsets.all(50.0),
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        'About me',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ),
 
                     //Description
-                    // Row(
-                    //   children: [
-                    //     Column(
-                    //       children: [
-                    //         Container(
-                    //           margin: const EdgeInsets.all(10.0),
-                    //           padding: const EdgeInsets.all(10.0),
-                    //           decoration: BoxDecoration(
-                    //               border: Border.all(color: Colors.blueAccent)),
-                    //           // height: 100,
-                    //           // width: 140,
-                    //           child: Column(
-                    //             children: [
-                    //               Expanded(
-                    //                 child: Container(
-                    //                   child: Text(
-                    //                     "I\'m Deborah. I create value and solve problems as a Software Developer.",
-                    //                     style: TextStyle(
-                    //                       fontSize: 28,
-                    //                       fontWeight: FontWeight.bold,
-                    //                     ),
-                    //                   ),
-                    //                 ),
-                    //               ),
-                    //             ],
-                    //           ),
-                    //         ),
-                    //       ],
-                    //     ),
-                    //   ],
-                    // ),
+                    Row(
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(10.0),
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.blueAccent)),
+                              // height: 100,
+                              // width: 140,
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      child: Text(
+                                        "I\'m Deborah. I create value and solve problems as a Software Developer.",
+                                        style: TextStyle(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
 
                     //About me picture
-                    // Row(
-                    //   children: [
-                    //     Expanded(
-                    //       child: Container(
-                    //         child: Image(
-                    //           image: NetworkImage(
-                    //               'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                    //         ),
-                    //       ),
-                    //     )
-                    //   ],
-                    // ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            child: Image(
+                              image: NetworkImage(
+                                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
 
                     //Get in touch button
-                    // Row(
-                    //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    //   children: [
-                    //     Container(
-                    //       alignment: Alignment.topLeft,
-                    //       margin: const EdgeInsets.all(15.0),
-                    //       padding: const EdgeInsets.all(10.0),
-                    //       child: ElevatedButton(
-                    //           child: Text(
-                    //             'Contact me',
-                    //           ),
-                    //           onPressed: () {},
-                    //           style: ButtonStyle(
-                    //               backgroundColor:
-                    //                   MaterialStateProperty.all(Colors.blue),
-                    //               padding: MaterialStateProperty.all(
-                    //                   EdgeInsets.all(13)),
-                    //               textStyle: MaterialStateProperty.all(
-                    //                   TextStyle(
-                    //                       fontSize: 20, color: Colors.white)))),
-                    //     ),
-                    //   ],
-                    // ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          alignment: Alignment.topLeft,
+                          margin: const EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(10.0),
+                          child: ElevatedButton(
+                              child: Text(
+                                'Contact me',
+                              ),
+                              onPressed: () {},
+                              style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStateProperty.all(Colors.blue),
+                                  padding: MaterialStateProperty.all(
+                                      EdgeInsets.all(13)),
+                                  textStyle: MaterialStateProperty.all(
+                                      TextStyle(
+                                          fontSize: 20, color: Colors.white)))),
+                        ),
+                      ],
+                    ),
 
                     // //Connect to me on social media
                     // Row(
