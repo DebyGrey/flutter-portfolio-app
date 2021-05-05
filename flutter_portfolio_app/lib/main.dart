@@ -439,18 +439,19 @@ class PortfolioApp extends StatelessWidget {
                     ),
 
                     //About me picture
-                    // Row(
-                    //   children: [
-                    //     Expanded(
-                    //       child: Container(
-                    //         child: Image(
-                    //           image: NetworkImage(
-                    //               'https://photos.google.com/photo/AF1QipO1QTTTy_oyWr0VCALcE2dWc3NrKtBnlNvRw_hc'),
-                    //         ),
-                    //       ),
-                    //     )
-                    //   ],
-                    // ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            child: Image(
+                              image: NetworkImage(
+                                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
 
                     //Get in touch button
                     Row(
