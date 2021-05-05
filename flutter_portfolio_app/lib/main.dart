@@ -239,7 +239,7 @@ class PortfolioApp extends StatelessWidget {
                           padding: const EdgeInsets.all(10.0),
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.blueAccent)),
-                          height: 300,
+                          height: 320,
                           width: 350,
                           child: Column(
                             children: [
@@ -296,10 +296,12 @@ class PortfolioApp extends StatelessWidget {
                                     // margin: const EdgeInsets.all(5.0),
                                     padding: const EdgeInsets.all(5.0),
                                     child: Text(
-                                      "Software Developer, Business Analyst, Product Owner",
+                                      "Software Developer |Business Analyst |Product Owner",
                                       style: TextStyle(
                                         fontSize: 14,
-                                        color: Colors.black87,
+                                        fontWeight: FontWeight.w100,
+                                        color: Colors.black45,
+                                        fontStyle: FontStyle.italic,
                                       ),
                                     ),
                                   ),
@@ -314,18 +316,37 @@ class PortfolioApp extends StatelessWidget {
                             padding: const EdgeInsets.all(10.0),
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.blueAccent)),
-                            height: 200,
-                            width: 250,
+                            height: 320,
+                            width: 350,
                             child: Column(
                               children: [
                                 Row(
                                   children: [
-                                    //Second box
+                                    //job image
+                                    Expanded(
+                                      child: Container(
+                                        height: 100,
+                                        child: Image(
+                                          image: NetworkImage(
+                                            'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                                          ),
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    //Company's name
                                     Container(
-                                      child: Icon(
-                                        Icons.web_outlined,
-                                        color: Colors.blueAccent,
-                                        size: 40.0,
+                                      // margin: const EdgeInsets.all(5.0),
+                                      padding: const EdgeInsets.all(20.0),
+                                      child: Text(
+                                        'EasyAce Synergy',
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -333,10 +354,31 @@ class PortfolioApp extends StatelessWidget {
                                 Row(
                                   children: [
                                     Container(
+                                      width: 300,
+                                      // margin: const EdgeInsets.all(5.0),
+                                      padding: const EdgeInsets.all(5.0),
                                       child: Text(
-                                        "App Development",
+                                        "I buid websites for clients which gave their businesses the boost it needed by reaching a handful of social prospects",
                                         style: TextStyle(
                                           fontSize: 14,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 300,
+                                      // margin: const EdgeInsets.all(5.0),
+                                      padding: const EdgeInsets.all(5.0),
+                                      child: Text(
+                                        "Software Developer, Business Analyst, Product Owner",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w100,
+                                          color: Colors.black45,
+                                          fontStyle: FontStyle.italic,
                                         ),
                                       ),
                                     ),
@@ -350,52 +392,50 @@ class PortfolioApp extends StatelessWidget {
                     ),
 
                     // Begining of About me
-                    // Container(
-                    //   alignment: Alignment.topLeft,
-                    //   margin: const EdgeInsets.all(50.0),
-                    //   padding: const EdgeInsets.all(10.0),
-                    //   child: Text(
-                    //     'About me',
-                    //     style: TextStyle(
-                    //       fontWeight: FontWeight.bold,
-                    //       fontSize: 18,
-                    //     ),
-                    //     textAlign: TextAlign.left,
-                    //   ),
-                    // ),
+                    Container(
+                      alignment: Alignment.topLeft,
+                      margin: const EdgeInsets.all(50.0),
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        'About me',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ),
 
                     // Description
-                    // Row(
-                    //   children: [
-                    //     Column(
-                    //       children: [
-                    //         Container(
-                    //           margin: const EdgeInsets.all(10.0),
-                    //           padding: const EdgeInsets.all(10.0),
-                    //           decoration: BoxDecoration(
-                    //               border: Border.all(color: Colors.blueAccent)),
-                    //           // height: 100,
-                    //           // width: 140,
-                    //           child: Column(
-                    //             children: [
-                    //               Expanded(
-                    //                 child: Container(
-                    //                   child: Text(
-                    //                     "I\'m Deborah. I create value and solve problems as a Software Developer.",
-                    //                     style: TextStyle(
-                    //                       fontSize: 28,
-                    //                       fontWeight: FontWeight.bold,
-                    //                     ),
-                    //                   ),
-                    //                 ),
-                    //               ),
-                    //             ],
-                    //           ),
-                    //         ),
-                    //       ],
-                    //     ),
-                    //   ],
-                    // ),
+                    Row(
+                      children: [
+                        Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  margin: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsets.all(10.0),
+                                  decoration: BoxDecoration(
+                                      border:
+                                          Border.all(color: Colors.blueAccent)),
+                                  // height: 100,
+                                  // width: 140,
+                                  child: Text(
+                                    "I am a Software Developer from Nigeria, I moved to Milan Italy in 2019 to pursue a masters degree in design - innovation, strategy and product. Since graduation, I have worked to create value for businesses and brands by drawing on my skills and experiences in product design and innovation, product marketing and brand strategy.",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.black45,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
 
                     //About me picture
                     // Row(
