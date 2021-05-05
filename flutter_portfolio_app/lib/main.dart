@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(PortfolioApp());
@@ -71,6 +70,7 @@ class PortfolioApp extends StatelessWidget {
                         ],
                       ),
                     ),
+
                     //photo row
                     Row(
                       children: [
@@ -86,6 +86,7 @@ class PortfolioApp extends StatelessWidget {
                       ],
                     ),
 
+                    //Begining of what I do row
                     Container(
                       alignment: Alignment.topLeft,
                       margin: const EdgeInsets.all(15.0),
@@ -99,7 +100,138 @@ class PortfolioApp extends StatelessWidget {
                         ),
                       ),
                     ),
-                    //what I do row
+
+                    Row(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.all(10.0),
+                          padding: const EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueAccent)),
+                          height: 100,
+                          width: 140,
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  //First box
+                                  Container(
+                                    child: Icon(
+                                      Icons.web_outlined,
+                                      color: Colors.blueAccent,
+                                      size: 40.0,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    child: Text(
+                                      "Web Development",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.all(10.0),
+                          padding: const EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueAccent)),
+                          height: 100,
+                          width: 140,
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  //First box
+                                  Container(
+                                    child: Icon(
+                                      Icons.web_outlined,
+                                      color: Colors.blueAccent,
+                                      size: 40.0,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    child: Text(
+                                      "App Development",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            margin: const EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.blueAccent)),
+                            height: 100,
+                            width: 140,
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    //Third box
+                                    Container(
+                                      child: Icon(
+                                        Icons.web_outlined,
+                                        color: Colors.blueAccent,
+                                        size: 40.0,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      child: Text(
+                                        "Web Development",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    // Begining of Work experience row
+                    Container(
+                      alignment: Alignment.topLeft,
+                      margin: const EdgeInsets.all(15.0),
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        'Work experience',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ),
+
+                    //Experience row
                     Row(
                       children: [
                         Container(
@@ -138,143 +270,109 @@ class PortfolioApp extends StatelessWidget {
                             ],
                           ),
                         ),
-                        //Second box
-                        Container(
-                          margin: const EdgeInsets.all(15.0),
-                          padding: const EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.blueAccent)),
-                          height: 100,
-                          width: 140,
-                          child: Column(
-                            children: [
-                              Row(
+                      ],
+                    ),
+
+                    //Begining of About me
+                    Container(
+                      alignment: Alignment.topLeft,
+                      margin: const EdgeInsets.all(50.0),
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        'About me',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ),
+
+                    //Description
+                    Row(
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(10.0),
+                              padding: const EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.blueAccent)),
+                              // height: 100,
+                              // width: 140,
+                              child: Column(
                                 children: [
-                                  Container(
-                                    child: Icon(
-                                      Icons.web_outlined,
-                                      color: Colors.blueAccent,
-                                      size: 40.0,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Container(
-                                    child: Text(
-                                      "Web Development",
-                                      style: TextStyle(
-                                        fontSize: 14,
+                                  Expanded(
+                                    child: Container(
+                                      child: Text(
+                                        "I\'m Deborah. I create value and solve problems as a Software Developer.",
+                                        style: TextStyle(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ],
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                        //Third box
-                        // Container(
-                        //   margin: const EdgeInsets.all(15.0),
-                        //   padding: const EdgeInsets.all(10.0),
-                        //   decoration: BoxDecoration(
-                        //       border: Border.all(color: Colors.blueAccent)),
-                        //   height: 100,
-                        //   width: 140,
-                        //   child: Column(
-                        //     children: [
-                        //       Row(
-                        //         children: [
-                        //           Container(
-                        //             child: Icon(
-                        //               Icons.web_outlined,
-                        //               color: Colors.blueAccent,
-                        //               size: 40.0,
-                        //             ),
-                        //           ),
-                        //         ],
-                        //       ),
-                        //       Row(
-                        //         children: [
-                        //           Container(
-                        //             child: Text(
-                        //               "Web Development",
-                        //               style: TextStyle(
-                        //                 fontSize: 14,
-                        //               ),
-                        //             ),
-                        //           ),
-                        //         ],
-                        //       ),
-                        //     ],
-                        //   ),
-                        // ),
                       ],
                     ),
-                    Container(
-                        alignment: Alignment.topLeft,
-                        margin: const EdgeInsets.all(15.0),
-                        padding: const EdgeInsets.all(10.0),
-                        child: Text(
-                          'Work experience',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+
+                    //About me picture
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            child: Image(
+                              image: NetworkImage(
+                                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                            ),
                           ),
-                          textAlign: TextAlign.left,
-                        )),
-                    //Experience row
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                              // child: Image(
-                              //   image: NetworkImage(
-                              //       'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                              // ),
-                              ),
                         )
                       ],
                     ),
-                    //Personal journey row
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                              //   child: Image(
-                              //     image: NetworkImage(
-                              //         'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                              //   ),
-                              ),
-                        )
-                      ],
-                    ),
-                    //About me row
+
+                    //Get in touch button
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
-                          height: 50,
-                          width: 100,
-                        ),
-                        Card(),
-                        Card(),
-                      ],
-                    ),
-                    //Contact me
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                              // child: Image(
-                              //   image: NetworkImage(
-                              //       'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                              // ),
+                          alignment: Alignment.topLeft,
+                          margin: const EdgeInsets.all(15.0),
+                          padding: const EdgeInsets.all(10.0),
+                          child: ElevatedButton(
+                              child: Text(
+                                'Contact me',
                               ),
-                        )
+                              onPressed: () {},
+                              style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStateProperty.all(Colors.blue),
+                                  padding: MaterialStateProperty.all(
+                                      EdgeInsets.all(13)),
+                                  textStyle: MaterialStateProperty.all(
+                                      TextStyle(
+                                          fontSize: 20, color: Colors.white)))),
+                        ),
                       ],
                     ),
+
+                    // //Connect to me on social media
+                    // Row(
+                    //   children: [
+                    //     Expanded(
+                    //       child: Container(
+                    //           // child: Image(
+                    //           //   image: NetworkImage(
+                    //           //       'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+                    //           // ),
+                    //           ),
+                    //     )
+                    //   ],
+                    // ),
                   ],
                 ),
               ),
@@ -283,6 +381,5 @@ class PortfolioApp extends StatelessWidget {
         ),
       ),
     );
-    // ));
   }
 }
