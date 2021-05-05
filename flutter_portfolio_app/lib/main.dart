@@ -11,7 +11,7 @@ class PortfolioApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white70,
+          backgroundColor: Colors.blueAccent,
           title: Text(
             'Portfolio',
             textDirection: TextDirection.ltr,
