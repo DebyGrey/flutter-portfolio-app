@@ -240,7 +240,7 @@ class PortfolioApp extends StatelessWidget {
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.blueAccent)),
                           height: 320,
-                          width: 350,
+                          width: 340,
                           child: Column(
                             children: [
                               Row(
@@ -296,7 +296,7 @@ class PortfolioApp extends StatelessWidget {
                                     // margin: const EdgeInsets.all(5.0),
                                     padding: const EdgeInsets.all(5.0),
                                     child: Text(
-                                      "Software Developer |Business Analyst |Product Owner",
+                                      "Software Developer, Business Analyst, Product Owner",
                                       style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w100,
@@ -317,7 +317,7 @@ class PortfolioApp extends StatelessWidget {
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.black87)),
                             height: 320,
-                            width: 350,
+                            width: 340,
                             child: Column(
                               children: [
                                 Row(
@@ -419,7 +419,7 @@ class PortfolioApp extends StatelessWidget {
                                     padding: const EdgeInsets.all(10.0),
 
                                     // height: 100,
-                                    width: 350,
+                                    width: 340,
                                     alignment: Alignment.center,
                                     child: Text(
                                       "I am a Software Developer from Nigeria, with a degree B.Sc Computer Science class of 2019. Since graduation, I have worked to create value for businesses and brands by drawing on my skills and experiences in product management, software development and innovation, product marketing and brand strategy.",
