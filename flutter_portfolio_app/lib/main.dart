@@ -299,8 +299,8 @@ class PortfolioApp extends StatelessWidget {
                                       "Software Developer, Business Analyst, Product Owner",
                                       style: TextStyle(
                                         fontSize: 14,
-                                        fontWeight: FontWeight.w100,
-                                        color: Colors.black45,
+                                        fontWeight: FontWeight.w300,
+                                        color: Colors.black54,
                                         fontStyle: FontStyle.italic,
                                       ),
                                     ),
@@ -352,6 +352,8 @@ class PortfolioApp extends StatelessWidget {
                                   ],
                                 ),
                                 Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
                                       width: 300,
@@ -376,8 +378,8 @@ class PortfolioApp extends StatelessWidget {
                                         "Software Developer, Business Analyst, Product Owner",
                                         style: TextStyle(
                                           fontSize: 14,
-                                          fontWeight: FontWeight.w100,
-                                          color: Colors.black45,
+                                          fontWeight: FontWeight.w300,
+                                          color: Colors.black54,
                                           fontStyle: FontStyle.italic,
                                         ),
                                       ),
@@ -394,7 +396,7 @@ class PortfolioApp extends StatelessWidget {
                     // Begining of About me
                     Container(
                       alignment: Alignment.topLeft,
-                      margin: const EdgeInsets.all(50.0),
+                      margin: const EdgeInsets.all(15.0),
                       padding: const EdgeInsets.all(10.0),
                       child: Text(
                         'About me',
@@ -415,16 +417,14 @@ class PortfolioApp extends StatelessWidget {
                               children: [
                                 Center(
                                   child: Container(
-                                    margin: const EdgeInsets.all(10.0),
-                                    padding: const EdgeInsets.all(10.0),
-
+                                    padding: const EdgeInsets.all(20.0),
                                     // height: 100,
                                     width: 340,
                                     alignment: Alignment.center,
                                     child: Text(
-                                      "I am a Software Developer from Nigeria, with a degree B.Sc Computer Science class of 2019. Since graduation, I have worked to create value for businesses and brands by drawing on my skills and experiences in product management, software development and innovation, product marketing and brand strategy.",
+                                      "I am a Software Developer from Nigeria, with a degree in B.Sc Computer Science, class of 2019. Since graduation, I have worked to create value for businesses and brands by drawing on my skills and experiences in product management, software development and innovation, product marketing and brand strategy.",
                                       style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 18,
                                         color: Colors.black45,
                                         fontWeight: FontWeight.bold,
                                       ),
