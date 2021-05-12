@@ -404,6 +404,24 @@ class PortfolioApp extends StatelessWidget {
                       ),
                     ),
 
+                    //About me picture
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Center(
+                            child: Container(
+                              width: 300,
+                              height: 200,
+                              child: Image.asset(
+                                'assets/images/deby.jpg',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+
                     // Description
                     Row(
                       children: [
@@ -431,22 +449,6 @@ class PortfolioApp extends StatelessWidget {
                             ),
                           ],
                         ),
-                      ],
-                    ),
-
-                    //About me picture
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Center(
-                            child: Container(
-                              child: Image.asset(
-                                'assets/images/deby.jpg',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                        )
                       ],
                     ),
 
