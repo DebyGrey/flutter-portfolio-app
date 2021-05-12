@@ -9,6 +9,7 @@ class PortfolioApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blueAccent,
@@ -76,13 +77,12 @@ class PortfolioApp extends StatelessWidget {
                       children: [
                         Expanded(
                           child: Container(
-                            child: Image(
-                              image: NetworkImage(
-                                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-                              fit: BoxFit.cover,
+                            child: Image.network(
+                              'https://pixabay.com/get/gef191b8ee7c056cbf1accbf2329a5adea67d87fbadfa3944b822f95f26190b1a259dd7ea9ba16a72da1712e80e5da30a62c2cbe51e0a50d8f86d38428fd33b24_1280.png',
                             ),
+                            // fit: BoxFit.cover,
                           ),
-                        )
+                        ),
                       ],
                     ),
 
@@ -249,11 +249,9 @@ class PortfolioApp extends StatelessWidget {
                                   Expanded(
                                     child: Container(
                                       height: 100,
-                                      child: Image(
-                                        image: NetworkImage(
-                                          'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
-                                        ),
-                                        fit: BoxFit.cover,
+                                      child: Image.network(
+                                        "https://pixabay.com/get/gc372ffe0835d3d14597cd2e3edd9995e4fadfd6e2a8cb369b8920cd07106bdd3f930306065403914f6af7ee819f18c0453879b9481290048ff6a5b1f5256a4a4_1280.png",
+                                        fit: BoxFit.fitWidth,
                                       ),
                                     ),
                                   ),
@@ -326,11 +324,9 @@ class PortfolioApp extends StatelessWidget {
                                     Expanded(
                                       child: Container(
                                         height: 100,
-                                        child: Image(
-                                          image: NetworkImage(
-                                            'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
-                                          ),
-                                          fit: BoxFit.cover,
+                                        child: Image.network(
+                                          'https://pixabay.com/get/gc372ffe0835d3d14597cd2e3edd9995e4fadfd6e2a8cb369b8920cd07106bdd3f930306065403914f6af7ee819f18c0453879b9481290048ff6a5b1f5256a4a4_1280.png',
+                                          // fit: BoxFit.cover,
                                         ),
                                       ),
                                     ),
@@ -442,10 +438,11 @@ class PortfolioApp extends StatelessWidget {
                     Row(
                       children: [
                         Expanded(
-                          child: Container(
-                            child: Image(
-                              image: NetworkImage(
-                                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                          child: Center(
+                            child: Container(
+                              child: Image.asset(
+                                'assets/images/deby.jpg',
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
@@ -485,19 +482,19 @@ class PortfolioApp extends StatelessWidget {
                       ],
                     ),
 
-                    // //Connect to me on social media
-                    // Row(
-                    //   children: [
-                    //     Expanded(
-                    //       child: Container(
-                    //         child: Image(
-                    //           image: NetworkImage(
-                    //               'https://www.flaticon.com/free-icon/twitter_733635?term=twitter&page=1&position=2&page=1&position=2&related_id=733635&origin=style'),
-                    //         ),
-                    //       ),
-                    //     )
-                    //   ],
-                    // ),
+                    //Connect to me on social media
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                              // child: Image.asset(
+                              //   // 'assets/images/twitter.png',
+                              //   fit: BoxFit.cover,
+                              // ),
+                              ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
